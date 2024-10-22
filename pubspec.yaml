@@ -39,7 +39,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   fl_chart: ^0.68.0
   flutter_secure_storage: ^9.2.2 # 자동로그인 정보를 저장하기 위핸 보안 저장소
-  dio: ^4.0.6 # http를 사용
+  dio: ^5.7.0 # http를 사용
   fluttertoast: ^8.2.8 # toast메세지 사용
   path_provider: ^2.1.4
   image_picker: ^1.1.2

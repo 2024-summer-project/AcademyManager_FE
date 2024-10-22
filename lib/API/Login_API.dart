@@ -43,6 +43,7 @@ class LoginApi {
   Future<void> saveTokens(Response response, String id) async {
     await storage.delete(key: 'accessToken');
     await storage.write(key: 'accessToken', value: response.data['accessToken']);
+    await storage.write(key: 'accessTokenTime', value: DateTime.now().toString());
 
     // 수정된 부분: null 체크 추가
     final setCookie = response.headers['set-cookie'];
